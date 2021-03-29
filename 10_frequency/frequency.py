@@ -7,3 +7,5 @@ def frequency(lst, search_term):
         >>> frequency([1, 4, 3], 7)
         0
     """
+    # count(search_term) for how many times we find X 
+    return lst.count(search_term) 
