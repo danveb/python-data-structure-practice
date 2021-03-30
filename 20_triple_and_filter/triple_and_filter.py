@@ -13,3 +13,17 @@ def triple_and_filter(nums):
         >>> triple_and_filter([1, 2])
         []
     """
+    # use list comprehension for % 4 == 0 
+    # return [num * 3 for num in nums if num % 4 == 0]
+
+    # OR another solution? 
+    # initialize empty list to append later on 
+    new_list = [] 
+    # for in loop over existing list 
+    for num in nums:
+    # if % 4 == 0 
+        if num % 4 == 0:
+    # append to new_list    
+            new_list.append(num * 3)  
+    # return new_list 
+    return new_list 

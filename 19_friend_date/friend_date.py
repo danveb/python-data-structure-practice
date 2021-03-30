@@ -16,3 +16,9 @@ def friend_date(a, b):
         >>> friend_date(sauron, gandalf)
         True
     """
+    # convert tuple[2] to set and use set operations & 
+    # if statement 
+    if (set(a[2]) & set(b[2])): 
+        return True 
+    else:
+        return False 

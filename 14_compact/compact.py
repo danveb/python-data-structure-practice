@@ -4,6 +4,5 @@ def compact(lst):
         >>> compact([0, 1, 2, '', [], False, (), None, 'All done'])
         [1, 2, 'All done']
     """
-    # .copy() method? 
-    # return list if true
-    return [value for value in lst if value] 
+    # .copy() method? better to use list comprehension to return a new list with all TRUE elements
+    return [val for val in lst if val]
