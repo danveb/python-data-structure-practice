@@ -13,3 +13,13 @@ def find_factors(num):
     >>> find_factors(321421)
     [1, 293, 1097, 321421]
     """
+    # num % i == 0 
+    total = [] 
+    # using outside code 
+    for i in range(1, num + 1):
+    # remainder should be equal to 0 
+        if num % i == 0:
+    # add i to total list 
+            total.append(i) 
+    # return full list 
+    return total 

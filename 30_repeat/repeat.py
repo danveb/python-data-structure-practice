@@ -18,3 +18,8 @@ def repeat(phrase, num):
         >>> repeat('abc', 'nope') is None
         True
     """
+    # comprehension? 
+    list = [char * 3 for char in phrase]
+    # using map method to map str (convert elements in list to str) 
+    list_to_str = ' '.join(map(str, list)) 
+    return list_to_str 
