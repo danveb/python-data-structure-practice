@@ -19,3 +19,13 @@ def find_greater_numbers(nums):
         >>> find_greater_numbers([])
         0
     """
+    # initialize var for count = 0; every time a greater num is followed count will increase 
+    count = 0 
+    # first loop; len(nums) 
+    for x in range(len(nums)):
+        for y in range(x + 1, len(nums)):
+            # if inner loop is greater than outer loop
+            if nums[y] - nums[x]:
+                count += 1 
+    # return count 
+    return count 
